@@ -14,7 +14,7 @@ const cookieParser = require("cookie-parser");
 const uploadMiddleware = multer({ dest: "uploads/" });
 const secret = "buxuw82189xbxsh";
 //{credentials:true,origin:'http://localhost:3000'}
-app.use(cors({ origin: "*" }));
+app.use(cors({ origin: "https://backkend-jyal.onrender.com" }));
 app.use(express.json());
 app.use(cookieParser());
 
