@@ -14,7 +14,9 @@ const cookieParser = require("cookie-parser");
 const uploadMiddleware = multer({ dest: "uploads/" });
 const secret = "buxuw82189xbxsh";
 //{credentials:true,origin:'http://localhost:3000'}
-app.use(cors({ origin: "https://fronted-gw9w.onrender.com" }));
+app.use(cors({
+    credentials:true
+  }));
 app.use(express.json());
 app.use(cookieParser());
 
